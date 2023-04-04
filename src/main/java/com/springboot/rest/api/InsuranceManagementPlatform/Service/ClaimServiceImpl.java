@@ -1,16 +1,17 @@
 package com.springboot.rest.api.InsuranceManagementPlatform.Service;
 
-import java.util.Calendar;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import com.springboot.rest.api.InsuranceManagementPlatform.Entity.ClaimEntity;
 import com.springboot.rest.api.InsuranceManagementPlatform.Repository.ClaimRepo;
 
+@Service
 public class ClaimServiceImpl implements ClaimService {
 
 	@Autowired

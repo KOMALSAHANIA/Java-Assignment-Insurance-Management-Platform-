@@ -5,6 +5,7 @@ import java.util.Date;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,22 +20,26 @@ public class InsurancePolicyEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	@Column(nullable = false)
 	private String policyNumber;
+	@Column(nullable = false)
+	private String type;
+	@Column(nullable = false)
+	private double coverageAmount;
+	@Column(nullable = false)
+	private double premium;
+	@Column(nullable = false)
+	private LocalDate startDate;
+	@Column(nullable = false)
+	private LocalDate endDate;
+	
 	public Long getId() {
 		return id;
 	}
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	private String type;
-	private double coverageAmount;
-	private double premium;
-	private LocalDate startDate;
-	private LocalDate endDate;
-	
-	
+	}	
 
 	public InsurancePolicyEntity() {
 		super();

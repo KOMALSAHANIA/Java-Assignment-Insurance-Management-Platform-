@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,14 +19,19 @@ public class ClientEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	@Column(nullable = false)
 	private String firstName;
 	private String lastName;
+	@Column(nullable = false)
 	private LocalDate dateOfBirth;
+	@Column(nullable = false)
 	private String address;
 	private String city;
 	private String state;
 	private String zipCode;
+	@Column(nullable = false)
 	private String email;
+	@Column(nullable = false)
 	private String phone;
 	
 	

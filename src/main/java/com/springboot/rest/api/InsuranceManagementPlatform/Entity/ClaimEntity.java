@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 import org.springframework.stereotype.Component;
 
+import io.micrometer.common.lang.Nullable;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,18 +14,20 @@ import jakarta.persistence.Table;
 
 @Component
 @Entity
-@Table(name="TB_Claim")
+@Table(name = "TB_Claim")
 public class ClaimEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	@Column(nullable = false)
 	private String claimNumber;
+	@Column(nullable = false)
 	private String description;
+	@Column(nullable = false)
 	private LocalDate claimDate;
+	@Column(nullable = false)
 	private String claimStatus;
-	
-	
 
 	public ClaimEntity() {
 		super();
@@ -37,8 +41,6 @@ public class ClaimEntity {
 		this.claimStatus = claimStatus;
 	}
 
-	
-	
 	public Long getId() {
 		return id;
 	}
