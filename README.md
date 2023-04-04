@@ -36,6 +36,7 @@ For all RESTFUL apis.I have done exception handling and proper validation.
 Please find some attachments of Postman for calling APIs. I have shared only Client APIs you can refer the same for Claims and Insurance policy.
 ![Screenshot 2023-04-03 143835](https://user-images.githubusercontent.com/100118439/229776337-34c64986-a9fd-42f2-9a89-5571f5837de6.png)
 ![Screenshot 2023-04-03 143901](https://user-images.githubusercontent.com/100118439/229776377-0a8e9070-2572-476d-8100-87dd5d85f2b2.png)
+![Screenshot 2023-04-04 181235](https://user-images.githubusercontent.com/100118439/229795839-f8f4762e-f622-4ea4-b57d-a204e38d8521.png)
 ![Screenshot 2023-04-03 144221](https://user-images.githubusercontent.com/100118439/229776421-4c2cd559-ff59-447a-b385-dc46928d1359.png)
 ![Screenshot 2023-04-03 144428](https://user-images.githubusercontent.com/100118439/229776460-e4984079-6bfc-46e0-b4ae-ecefaef23c94.png)
 ![Screenshot 2023-04-03 144505](https://user-images.githubusercontent.com/100118439/229776487-0f85c047-98a3-444e-a81b-19dd1f964b40.png)
